@@ -1,0 +1,2756 @@
+<!doctype html>
+<html lang="en-US">
+ <head> 
+  <title>HTML ISO-8859-1 Reference</title> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips"> 
+  <meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML."> 
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="/w3css/4/w3.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Source Code Pro" rel="stylesheet"> 
+  <style>
+a:hover,a:active{color:#4CAF50}
+table.w3-table-all{margin:20px 0}
+/*OPPSETT AV TOP, TOPNAV, SIDENAV, MAIN, RIGHT OG FOOTER:*/
+.top {
+position:relative;
+background-color:#ffffff;
+height:68px;
+padding-top:20px;
+line-height:50px;
+overflow:hidden;
+z-index:2;
+}
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height:1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:absolute;
+top:17px;
+}
+.w3schools-logo .dotcom {color:#4CAF50}
+.topnav {
+position:relative;
+z-index:2;
+font-size:17px;
+background-color:#5f5f5f;
+color:#f1f1f1;
+width:100%;
+padding:0;
+letter-spacing:1px;
+font-family:"Segoe UI",Arial,sans-serif;
+}
+.topnav a{
+padding:10px 15px 9px 15px !important;
+}
+.topnav .w3-bar a:hover,.topnav .w3-bar a:focus{
+background-color:#000000 !important;
+color:#ffffff !important;
+}
+.topnav .w3-bar a.active {
+background-color:#4CAF50;
+color:#ffffff;
+}
+a.topnav-icons {
+width:52px !important;
+font-size:20px !important;
+padding-top:11px !important;
+padding-bottom:13px !important;
+}
+a.topnav-icons.fa-home {font-size:22px !important}
+a.topnav-icons.fa-menu {font-size:22px !important}
+a.topnav-localicons {
+font-size:20px !important;
+padding-top:6px !important;
+padding-bottom:12px !important;
+}
+i.fa-caret-down,i.fa-caret-up{width:10px}
+#sidenav h2 {
+font-size:21px;
+padding-left:16px;
+margin:-4px 0 4px 0;
+width:204px;
+}
+#sidenav a {font-family:"Segoe UI",Arial,sans-serif;text-decoration:none;display:block;padding:2px 1px 1px 16px}
+#sidenav a:hover,#sidenav a:focus {color:#000000;background-color:#cccccc;}
+#sidenav a.active {background-color:#4CAF50;color:#ffffff}
+#sidenav a.activesub:link,#sidenav a.activesub:visited {background-color:#ddd;color:#000;}
+#sidenav a.activesub:hover,#sidenav a.activesub:active {background-color:#ccc;color:#000;}
+#leftmenuinner {
+position:fixed;
+top:0;
+padding-top:112px;
+padding-bottom:0;    
+height:100%;
+width:220px;
+background-color:transparent;
+}
+#leftmenuinnerinner {
+height:100%;
+width:100%;
+overflow-y:scroll;
+overflow-x:hidden;
+padding-top:20px;
+}
+#main {padding:16px}
+#mainLeaderboard {height:90px}
+#right {text-align:center;padding:16px 16px 0 0}
+#right a {text-decoration:none}
+#right a:hover {text-decoration:underline}
+#skyscraper {min-height:600px}
+.sidesection {margin-bottom:32px;}
+#sidesection_exercise a{display:block;padding:4px 10px;}
+#sidesection_exercise a:hover,#sidesection_exercise a:active{background-color:#ccc;text-decoration:none;color:#000000;}
+.bottomad {padding:0 16px 16px 0;float:left;width:auto;}
+.footer a {text-decoration:none;}
+.footer a:hover{text-decoration:underline;}
+#nav_tutorials,#nav_references,#nav_exercises{-webkit-overflow-scrolling:touch;overflow:auto;}
+#nav_tutorials::-webkit-scrollbar,#nav_references::-webkit-scrollbar,#nav_exercises::-webkit-scrollbar {width: 12px;}
+#nav_tutorials::-webkit-scrollbar-track,#nav_references::-webkit-scrollbar-track,#nav_exercises::-webkit-scrollbar-track {background:#555555;}
+#nav_tutorials::-webkit-scrollbar-thumb,#nav_references::-webkit-scrollbar-thumb,#nav_exercises::-webkit-scrollbar-thumb {background: #999999;}
+#nav_tutorials,#nav_references,#nav_exercises {
+display:none;
+letter-spacing:0;
+margin-top:44px;
+}
+#nav_tutorials a,#nav_references a,#nav_exercises a{
+padding:2px 0 2px 6px!important;
+}
+#nav_tutorials a:focus,#nav_references a:focus,#nav_exercises a:focus{
+color: #000;
+background-color: #ccc;
+}
+#nav_tutorials h3,#nav_references h3,#nav_exercises h3{
+padding-left:6px;
+}
+.ref_overview{display:none}
+.tut_overview{
+ display :none;
+ margin-left:10px;
+ background-color :#ddd;
+ line-height:1.8em;
+}
+#sidenav a.activesub:link,#sidenav a.activesub:visited {background-color:#ddd;color:#000;}
+#sidenav a.activesub:hover,#sidenav a.activesub:active {background-color:#ccc;color:#000;}
+#sidenav a.active_overview:link,#sidenav a.active_overview:visited {background-color:#ccc;color:#000;}
+.w3-example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.nextprev a {font-size:17px;border:1px solid #cccccc;}
+.nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#000000;}
+.w3-example a:focus,.nextprev a:focus{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.nextprev a.w3-right,.nextprev a.w3-left {background-color:#4CAF50;color:#ffffff;border-color:#4CAF50}
+#w3-exerciseform {background-color:#555555;padding:16px;color:#ffffff;}
+#w3-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;color:#000000;}
+#w3-exerciseform .exerciseprecontainer {background-color:#f1f1f1;padding:16px;font-size:120%;font-family:Consolas,"Courier New", Courier, monospace;}
+#w3-exerciseform .exerciseprecontainer pre[class*="language-"] {padding:1px;}
+#w3-exerciseform .exerciseprecontainer pre {display: block;}
+#w3-exerciseform .exerciseprecontainer input {padding:1px;border: 1px solid transparent;height:1.3em;}
+.w3-theme {color:#fff !important;background-color:#73AD21 !important;background-color:#4CAF50 !important}
+.w3-theme-border {border-color:#4CAF50 !important}
+.sharethis a:hover {color:inherit;}
+.fa-facebook-square,.fa-twitter-square,.fa-google-plus-square {padding:0 8px;}
+.fa-facebook-square:hover, .fa-thumbs-o-up:hover {color:#3B5998;}
+.fa-twitter-square:hover {color:#55acee;}
+.fa-google-plus-square:hover {color:#dd4b39;}
+#google_translate_element img {margin-bottom:-1px;}
+#googleSearch {color:#000000;}
+#googleSearch a {padding:0 !important;}
+.searchdiv {max-width:400px;margin:auto;text-align:left;font-size:16px}
+div.cse .gsc-control-cse, div.gsc-control-cse {background-color:transparent;border:none;padding:6px;margin:0px}
+td.gsc-search-button input.gsc-search-button {background-color:#4CAF50;border-color:#4CAF50}
+td.gsc-search-button input.gsc-search-button:hover {background-color:#46a049;}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+box-sizing:content-box; line-height:normal;}
+.gsc-tabsArea div {overflow:visible;}
+/*"nullstille" w3css:*/
+.w3-main{transition:margin-left 0s;}
+/*"nullstilling" slutt*/
+@media (min-width:1675px) {
+#main {width:79%}
+#right {width:21%}
+}
+@media (max-width:992px) {
+.top {height:100px}
+.top img {display:block;margin:auto;}
+.top .w3schools-logo {position:relative;top:0;width:100%;text-align:center;margin:auto}
+.toptext {width:100%;text-align:center}
+#sidenav {width:260px;
+box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#sidenav h2 {font-size:26px;width:100%;}
+#sidenav a {padding:3px 2px 3px 24px;font-size:17px}
+#leftmenuinner {  
+overflow:auto;
+-webkit-overflow-scrolling:touch;
+height:100%;
+position:relative;
+width:auto;
+padding-top:0;
+background-color:#f1f1f1;
+}
+#leftmenuinnerinner {overflow-y:scroll}
+.bottomad {float:none;text-align:center}
+#skyscraper {min-height:60px}
+}
+@media screen and (max-width:600px) {
+.w3-example, .w3-note, #w3-exerciseform {margin-left:-16px;margin-right:-16px;}
+.top {height:68px}
+.toptext {display:none}
+}
+@font-face {
+font-family:'fontawesome';
+src: url('../lib/fonts/fontawesome.eot?14663396');
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:inherit;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0, 0);
+}
+.fa-2x {
+ font-size:2em;
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-facebook-square:before {content:'\e806';}
+.fa-google-plus-square:before {content:'\e807';}
+.fa-twitter-square:before {content:'\e808';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+.fa.fa-adjust:before { content: '\e80b'; }
+span.marked, span.deprecated {
+ color:#e80000;
+ background-color:transparent;
+}
+.w3-code span.marked {
+ color:#e80000;
+ background-color:transparent;
+}
+.darktheme .w3-code span.marked {
+ color:#ff9999;
+ background-color:transparent;
+}
+.darktheme .w3-example.w3-light-grey {
+  background-color:rgb(40,44,52)!important;color:white;
+}
+.intro {font-size:16px}
+.w3-btn, .w3-btn:link, .w3-btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.w3-btn[href*="exercise.asp"],a.w3-btn[href*="exercise_js.asp"] {margin:10px 5px 0 0}
+a.btnplayit,a.btnplayit:link,a.btnplayit:visited {background-color:#FFAD33;padding:1px 10px 2px 10px}
+a.btnplayit:hover,a.btnplayit:active {background-color:#ffffff;color:#FFAD33}
+a.btnplayit:hover {box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);}
+a.btnsmall:link,a.btnsmall:visited,a.btnsmall:active,a.btnsmall:hover {
+float:right;padding:1px 10px 2px 10px;font:15px Verdana, sans-serif;}
+a.btnsmall:hover {box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);}
+a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
+.tagcolor{color:mediumblue}
+.tagnamecolor{color:brown}
+.attributecolor{color:red}
+.attributevaluecolor{color:mediumblue}
+.commentcolor{color:green}
+.cssselectorcolor{color:brown}
+.csspropertycolor{color:red}
+.csspropertyvaluecolor{color:mediumblue}
+.cssdelimitercolor{color:black}
+.cssimportantcolor{color:red}  
+.jscolor{color:black}
+.jskeywordcolor{color:mediumblue}
+.jsstringcolor{color:brown}
+.jsnumbercolor{color:red}
+.jspropertycolor{color:black}
+.javacolor{color:black}
+.javakeywordcolor{color:mediumblue}
+.javastringcolor{color:brown}
+.javanumbercolor{color:red}
+.javapropertycolor{color:black}
+.kotlincolor{color:black}
+.kotlinkeywordcolor{color:mediumblue}
+.kotlinstringcolor{color:brown}
+.kotlinnumbercolor{color:red}
+.kotlinpropertycolor{color:black}
+.phptagcolor{color:red}
+.phpcolor{color:black}
+.phpkeywordcolor{color:mediumblue}
+.phpglobalcolor{color:goldenrod}
+.phpstringcolor{color:brown}
+.phpnumbercolor{color:red}  
+.pythoncolor{color:black}
+.pythonkeywordcolor{color:mediumblue}
+.pythonstringcolor{color:brown}
+.pythonnumbercolor{color:red}  
+.angularstatementcolor{color:red}
+.sqlcolor{color:black}
+.sqlkeywordcolor{color:mediumblue}
+.sqlstringcolor{color:brown}
+.sqlnumbercolor{color:} 
+.darktheme .w3-code{background-color:rgb(40,44,52);color:white;border-left-color:rgb(40,44,52)}
+.darktheme .w3-example pre{background-color:rgb(40,44,52)!important;border-left-color:rgb(40,44,52)}
+.darktheme .tagcolor{color:#88ccbb/*green2*/!important}
+.darktheme .tagnamecolor{color:#ff9999/*red*/!important}
+.darktheme .attributecolor{color:#c5a5c5/*purple*/!important}
+.darktheme .attributevaluecolor{color:#88c999/*green*/!important}
+.darktheme .commentcolor{color:#999!important}
+.darktheme .cssselectorcolor{color:#ff9999/*red*/!important}
+.darktheme .csspropertycolor{color:#c5a5c5/*purple*/!important}
+.darktheme .csspropertyvaluecolor{color:#88c999/*green*/!important}
+.darktheme .cssdelimitercolor{color:white!important}
+.darktheme .cssimportantcolor{color:#ff9999/*red*/!important}
+.darktheme .jscolor{color:white!important}
+.darktheme .jskeywordcolor{color:#c5a5c5/*purple*/!important}
+.darktheme .jsstringcolor{color:#88c999/*green*/!important}
+.darktheme .jsnumbercolor{color:#80b6ff/*blue*/!important}
+.darktheme .jspropertycolor{color:white!important}
+.darktheme .javacolor{color:white!important}
+.darktheme .javakeywordcolor{color:#88c999/*green*/!important}
+.darktheme .javastringcolor{color:#88c999/*green*/!important}
+.darktheme .javanumbercolor{color:#88c999/*green*/!important}
+.darktheme .javapropertycolor{color:white!important}
+.darktheme .kotlincolor{color:white!important}
+.darktheme .kotlinkeywordcolor{color:#88c999/*green*/!important}
+.darktheme .kotlinstringcolor{color:#88c999/*green*/!important}
+.darktheme .kotlinnumbercolor{color:#88c999/*green*/!important}
+.darktheme .kotlinpropertycolor{color:white!important}
+.darktheme .phptagcolor{color:#999!important}
+.darktheme .phpcolor{color:white!important}
+.darktheme .phpkeywordcolor{color:#ff9999/*red*/!important}
+.darktheme .phpglobalcolor{color:white!important}
+.darktheme .phpstringcolor{color:#88c999/*green*/!important}
+.darktheme .phpnumbercolor{color:#88c999/*green*/!important}
+.darktheme .pythoncolor{color:white!important}
+.darktheme .pythonkeywordcolor{color:#ff9999/*red*/!important}
+.darktheme .pythonstringcolor{color:#88c999/*green*/!important}
+.darktheme .pythonnumbercolor{color:#88c999/*green*/!important}
+.darktheme .angularstatementcolor{color:#ff9999/*red*/!important}
+.darktheme .sqlcolor{color:white!important}
+.darktheme .sqlkeywordcolor{color:#80b6ff/*blue*/!important}
+.darktheme .sqlstringcolor{color:#88c999/*green*/!important}
+.darktheme .sqlnumbercolor{color:}
+@media only screen and (max-device-width: 480px) {
+.w3-code, .w3-codespan,#w3-exerciseform .exerciseprecontainer {font-family: 'Source Code Pro',Menlo,Consolas,monospace;}
+.w3-code {font-size:14px;}
+.w3-codespan {font-size:15px;}
+#w3-exerciseform .exerciseprecontainer {font-size:15px;}
+#w3-exerciseform .exerciseprecontainer input {padding:0;height:1.5em}
+}
+@media screen and (max-width:700px) {
+#mainLeaderboard {height:60px}
+#div-gpt-ad-1422003450156-0 {float:none;margin-left:auto;margin-right:auto}
+#div-gpt-ad-1422003450156-3 {float:none;margin-left:auto;margin-right:auto}
+}
+@media (max-width:1700px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(18){display:none;}}
+@media (max-width:1600px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(13){display:none;}}
+/*@media (max-width:1510px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}*/
+@media (max-width:1530px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}
+@media (max-width:1450px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(11){display:none;}}
+/*@media (max-width:1330px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}*/
+@media (max-width:1350px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}
+/*@media (max-width:1200px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}*/
+@media (max-width:1240px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}
+/*@media (max-width:1100px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}*/
+@media (max-width:1140px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}
+/*@media (max-width:1000px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}*/
+@media (max-width:1050px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}
+@media (max-width:992px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(6){display:none;}}
+@media (max-width:300px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(17){display:none;}}
+@media (max-width:930px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(19){display:none;}}
+@media (max-width:800px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(20){display:none;}}
+@media (max-width:650px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(5){display:none;} #topnav .w3-bar:nth-of-type(1) a:nth-of-type(16){display:none;}}
+@media (max-width:460px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(4){display:none;}}
+@media (max-width:400px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(3){display:none;}}
+.w3-note{background-color:#ffffcc;border-left:6px solid #ffeb3b}
+.w3-warning{background-color:#ffdddd;border-left:6px solid #f44336}
+.w3-info{background-color:#ddffdd;border-left:6px solid #4CAF50}
+hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
+.phonebr {display:none;}
+@media screen and (max-width: 475px) {.phonebr {display:initial;}}
+
+/*NYTT:*/
+#main {
+  padding:16px 32px 32px 32px;
+  border-right: 1px solid #f1f1f1;
+}
+#right {
+  padding:16px 8px;
+}
+.sidesection .w3-left-align {
+  text-align:center!important;
+}
+#footer {padding:32px;border-top:1px solid #f1f1f1;}
+#footer hr:first-child {
+  display:none;
+}
+.w3-info {
+  background-color: #d4edda;
+  border-left: none;
+  padding:32px;
+  margin:24px;
+  margin-left:-32px;
+  margin-right:-32px;
+}
+.w3-example {
+  padding: 8px 20px;
+  margin: 24px -20px;
+  box-shadow:none!important;
+}
+.w3-note, .w3-warning {
+  border-left: none;
+}
+.w3-panel {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left:-32px;
+  margin-right:-32px;
+  padding:16px 32px;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+.w3-btn:hover,.w3-btn:active,.w3-example a:focus,.nextprev a:focus {
+  box-shadow: none;
+  background-color: #46a049!important;
+}
+.w3-btn:hover.w3-blue,.w3-btn:active.w3-blue,.w3-button:hover.w3-blue,.w3-button:active.w3-blue {
+  background-color: #0d8bf2!important;color: #fff!important;
+}
+.w3-btn:hover.w3-white,.w3-btn:active.w3-white,.w3-button:hover.w3-white,.w3-button:active.w3-white {
+  background-color: #f1f1f1!important;
+}
+.nextprev .w3-btn:not(.w3-left):not(.w3-right):hover,.nextprev .w3-btn:not(.w3-left):not(.w3-right):active,.nextprev .w3-btn:not(.w3-left):not(.w3-right):focus {
+  background-color: #f1f1f1!important;
+}
+a.btnsmall:hover {box-shadow:none;}
+a.btnsmall:active,a.btnsmall:hover {color:#fff;}
+a.btnplayit:hover,a.btnplayit:active {background-color:#ff9900!important;color:#fff}
+a.btnplayit:hover {box-shadow:none;}
+#w3-exerciseform {
+  padding: 20px;
+  margin:32px -20px;
+}
+p {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 15px;
+}
+hr {
+  margin:20px -16px;
+}
+.w3-codespan {
+  font-size:105%;
+}
+.w3-example p,.w3-panel p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.w3-code{
+  font-size:15px;
+}
+#midcontentadcontainer,#mainLeaderboard {
+  text-align:center;
+  margin-left:-20px;
+  margin-right:-20px;
+}
+@media screen and (max-width:600px) {
+.w3-example, #w3-exerciseform {margin-left:-32px;margin-right:-32px;}
+}
+
+@media only screen and (max-device-width: 480px) {
+#main {padding:24px}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+.w3-example {
+  padding: 8px 16px;
+  margin: 24px -24px;
+}
+#w3-exerciseform {
+  padding: 8px 16px 16px 16px;
+  margin: 24px -24px;
+}
+.w3-panel,.w3-info {
+  margin-left:-24px;
+  margin-right:-24px;
+}
+
+}
+
+</style> 
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script> 
+  <script src="//snigelweb-com.videoplayerhub.com/videoloader.js" async></script> 
+  <script type="text/javascript">
+var k42 = false;
+var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+
+k42 = true;
+(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+
+var snhb = snhb || {}; snhb.queue = snhb.queue || [];
+snhb.options = {
+               logOutputEnabled : false,
+               autoStartAuction: false,
+               gdpr: {
+                     mainGeo: "us",
+                     reconsiderationAppealIntervalSeconds: 0
+                     }
+               };
+
+</script> 
+  <script src="//static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script> 
+  <script>
+			window.__cmp('setLogo', "//www.w3schools.com/images/w3schoolscom_gray.gif", function(result){
+	       		snhb.console.log("Logo set");
+	    	});
+			window.__cmp('setPrivacyPolicy', "//www.w3schools.com/about/about_privacy.asp", function(result){
+	       		snhb.console.log("Privacy policy URI set");
+	    	});
+			window.__cmp('enableBanner', null, function(result) {
+	       		snhb.console.log("Banner mode enabled");
+			});
+			__cmp('enablePopupDismissable', null, function(result) {});
+			window.__cmp('disableBannerPrivacyPolicyButton', null, function(result) {
+	       		snhb.console.log("Banner mode without privacy policy button enabled");
+			});
+      window.__cmp('setTranslationFiles', { path: '//www.w3schools.com/lib/', locales: ["en"] }, function(result) {});
+      __cmp('setCSS', '//www.w3schools.com/lib/cmp.css', function(result){} );
+</script> 
+  <script async type="text/javascript" src="//static.h-bid.com/w3schools.com/20190327/snhb-w3schools.com.min.js?20190327"></script> 
+  <script>
+  snhb.queue.push(function(){
+
+    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+
+  });
+</script> 
+  <script type="text/javascript">
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("stickypos").style.position = "sticky";
+  var elem = document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("skyscraper")) {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+    elem.style.top = stickypos + "px";
+    return false;
+  }
+  var stickypos = document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+      stickyadstatus = "sticky";
+      document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").style.position = "static";
+    }
+  }
+  if (stickyadstatus == "sticky") {
+    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+        elem.style.top = "60px";
+        stickyadstatus = "sticky";
+        document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script> 
+ </head>
+ <body> 
+  <div class="w3-container top"> 
+   <a class="w3schools-logo notranslate" href="//www.w3schools.com">w3schools<span class="dotcom">.com</span></a> 
+   <div class="w3-right w3-hide-small w3-wide toptext" style="font-family:'Segoe UI',Arial,sans-serif">
+    THE WORLD'S LARGEST WEB DEVELOPER SITE
+   </div> 
+  </div> 
+  <div style="display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;" id="googleSearch"> 
+   <div class="gcse-search"></div> 
+  </div> 
+  <div style="display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#5f5f5f;text-align:right;padding-top:9px;" id="google_translate_element"></div> 
+  <div class="w3-card-2 topnav notranslate" id="topnav"> 
+   <div style="overflow:auto;"> 
+    <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px"> 
+     <a href="javascript:void(0);" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button" onclick="open_menu()" title="Menu"></a> 
+     <a href="/default.asp" class="topnav-icons fa fa-home w3-left w3-bar-item w3-button" title="Home"></a> 
+     <a class="w3-bar-item w3-button" href="/html/default.asp" title="HTML Tutorial">HTML</a> 
+     <a class="w3-bar-item w3-button" href="/css/default.asp" title="CSS Tutorial">CSS</a> 
+     <a class="w3-bar-item w3-button" href="/js/default.asp" title="JavaScript Tutorial">JAVASCRIPT</a> 
+     <a class="w3-bar-item w3-button" href="/sql/default.asp" title="SQL Tutorial">SQL</a> 
+     <a class="w3-bar-item w3-button" href="/python/default.asp" title="Python Tutorial">PYTHON</a> 
+     <a class="w3-bar-item w3-button" href="/php/default.asp" title="PHP Tutorial">PHP</a> 
+     <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp" title="Bootstrap Tutorial">BOOTSTRAP</a> 
+     <a class="w3-bar-item w3-button" href="/howto/default.asp" title="How To">HOW TO</a> 
+     <a class="w3-bar-item w3-button" href="/w3css/default.asp" title="W3.CSS Tutorial">W3.CSS</a> 
+     <a class="w3-bar-item w3-button" href="/jquery/default.asp" title="jQuery Tutorial">JQUERY</a> 
+     <a class="w3-bar-item w3-button" href="/xml/default.asp" title="XML Tutorial">XML</a> 
+     <a class="w3-bar-item w3-button" id="topnavbtn_tutorials" href="javascript:void(0);" onclick="w3_open_nav(&quot;tutorials&quot;)" title="Tutorials">MORE <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a> 
+     <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="open_search(this)" title="Search W3Schools">?</a> 
+     <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="open_translate(this)" title="Translate W3Schools">?</a> 
+     <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="changecodetheme(this)" title="Toggle Dark Code">?</a> 
+     <a class="w3-bar-item w3-button w3-right" target="_blank" href="/forum/default.asp">FORUM</a> 
+     <a class="w3-bar-item w3-button w3-right" id="topnavbtn_exercises" href="javascript:void(0);" onclick="w3_open_nav(&quot;exercises&quot;)" title="Exercises">EXERCISES <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a> 
+     <a class="w3-bar-item w3-button w3-right" id="topnavbtn_references" href="javascript:void(0);" onclick="w3_open_nav(&quot;references&quot;)" title="References">REFERENCES <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a> 
+    </div> 
+    <div id="nav_tutorials" class="w3-bar-block w3-card-2" style="display:none;"> 
+     <span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span> 
+     <div class="w3-row-padding" style="padding:24px 48px"> 
+      <div class="w3-col l3 m6"> 
+       <h3>HTML and CSS</h3> 
+       <a class="w3-bar-item w3-button" href="/html/default.asp">Learn HTML</a> 
+       <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a> 
+       <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a> 
+       <a class="w3-bar-item w3-button" href="/w3css/default.asp">Learn W3.CSS</a> 
+       <a class="w3-bar-item w3-button" href="/colors/default.asp">Learn Colors</a> 
+       <a class="w3-bar-item w3-button" href="/icons/default.asp">Learn Icons</a> 
+       <a class="w3-bar-item w3-button" href="/graphics/default.asp">Learn Graphics</a> 
+       <a class="w3-bar-item w3-button" href="/graphics/svg_intro.asp">Learn SVG</a> 
+       <a class="w3-bar-item w3-button" href="/graphics/canvas_intro.asp">Learn Canvas</a> 
+       <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a> 
+       <a class="w3-bar-item w3-button" href="/sass/default.asp">Learn Sass</a> 
+       <div class="w3-hide-large w3-hide-small"> 
+        <h3>XML</h3> 
+        <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a> 
+        <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp">Learn XML AJAX</a> 
+        <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a> 
+        <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a> 
+        <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp">Learn XML Schema</a> 
+        <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a> 
+        <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp">Learn XPath</a> 
+        <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp">Learn XQuery</a> 
+       </div> 
+      </div> 
+      <div class="w3-col l3 m6"> 
+       <h3>JavaScript</h3> 
+       <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a> 
+       <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a> 
+       <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a> 
+       <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a> 
+       <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a> 
+       <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a> 
+       <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a> 
+       <h3>Programming</h3> 
+       <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a> 
+       <a class="w3-bar-item w3-button" href="/java/default.asp">Learn Java</a> 
+       <a class="w3-bar-item w3-button" href="/cpp/default.asp">Learn C++</a> 
+       <a class="w3-bar-item w3-button" href="/cs/default.asp">Learn C#</a> 
+       <div class="w3-hide-small">
+        <br class="w3-hide-medium w3_hide-small">
+        <br class="w3-hide-medium w3_hide-small">
+       </div> 
+      </div> 
+      <div class="w3-col l3 m6"> 
+       <h3>Server Side</h3> 
+       <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a> 
+       <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a> 
+       <a class="w3-bar-item w3-button" href="/asp/default.asp">Learn ASP</a> 
+       <a class="w3-bar-item w3-button" href="/nodejs/default.asp">Learn Node.js</a> 
+       <a class="w3-bar-item w3-button" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a> 
+       <h3>Web Building</h3> 
+       <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a> 
+       <a class="w3-bar-item w3-button" href="/browsers/default.asp">Web Statistics</a> 
+       <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a> 
+       <a class="w3-bar-item w3-button" href="/tryit/default.asp">Web Editor</a> 
+       <a class="w3-bar-item w3-button" href="/whatis/default.asp">Web Development</a> 
+      </div> 
+      <div class="w3-col l3 m6 w3-hide-medium"> 
+       <h3>XML</h3> 
+       <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a> 
+       <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp">Learn XML AJAX</a> 
+       <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a> 
+       <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp">Learn XML Schema</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp">Learn XPath</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp">Learn XQuery</a> 
+      </div> 
+     </div> 
+     <br> 
+    </div> 
+    <div id="nav_references" class="w3-bar-block w3-card-2"> 
+     <span onclick="w3_close_nav(&quot;references&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span> 
+     <div class="w3-row-padding" style="padding:24px 48px"> 
+      <div class="w3-col l3 m6"> 
+       <h3>HTML</h3> 
+       <a class="w3-bar-item w3-button" href="/tags/default.asp">HTML Tag Reference</a> 
+       <a class="w3-bar-item w3-button" href="/tags/ref_eventattributes.asp">HTML Event Reference</a> 
+       <a class="w3-bar-item w3-button" href="/colors/default.asp">HTML Color Reference</a> 
+       <a class="w3-bar-item w3-button" href="/tags/ref_attributes.asp">HTML Attribute Reference</a> 
+       <a class="w3-bar-item w3-button" href="/tags/ref_canvas.asp">HTML Canvas Reference</a> 
+       <a class="w3-bar-item w3-button" href="/graphics/svg_reference.asp">HTML SVG Reference</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/default.asp">HTML Character Sets</a> 
+       <a class="w3-bar-item w3-button" href="/graphics/google_maps_reference.asp">Google Maps Reference</a> 
+       <h3>CSS</h3> 
+       <a class="w3-bar-item w3-button" href="/cssref/default.asp">CSS Reference</a> 
+       <a class="w3-bar-item w3-button" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a> 
+       <a class="w3-bar-item w3-button" href="/cssref/css_selectors.asp">CSS Selector Reference</a> 
+       <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3 Reference</a> 
+       <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4 Reference</a> 
+       <a class="w3-bar-item w3-button" href="/w3css/w3css_references.asp">W3.CSS Reference</a> 
+       <a class="w3-bar-item w3-button" href="/icons/icons_reference.asp">Icon Reference</a> 
+       <a class="w3-bar-item w3-button" href="/sass/sass_functions_string.asp">Sass Reference</a> 
+      </div> 
+      <div class="w3-col l3 m6"> 
+       <h3>JavaScript</h3> 
+       <a class="w3-bar-item w3-button" href="/jsref/default.asp">JavaScript Reference</a> 
+       <a class="w3-bar-item w3-button" href="/jsref/default.asp">HTML DOM Reference</a> 
+       <a class="w3-bar-item w3-button" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a> 
+       <a class="w3-bar-item w3-button" href="/angular/angular_ref_directives.asp">AngularJS Reference</a> 
+       <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp">W3.JS Reference</a> 
+       <h3>Programming</h3> 
+       <a class="w3-bar-item w3-button" href="/python/python_reference.asp">Python Reference</a> 
+       <a class="w3-bar-item w3-button" href="/java/java_ref_keywords.asp">Java Reference</a> 
+      </div> 
+      <div class="w3-col l3 m6"> 
+       <h3>Server Side</h3> 
+       <a class="w3-bar-item w3-button" href="/sql/sql_ref_keywords.asp">SQL Reference</a> 
+       <a class="w3-bar-item w3-button" href="/php/php_ref_overview.asp">PHP Reference</a> 
+       <a class="w3-bar-item w3-button" href="/asp/asp_ref_response.asp">ASP Reference</a> 
+       <h3>XML</h3> 
+       <a class="w3-bar-item w3-button" href="/xml/dom_nodetype.asp">XML Reference</a> 
+       <a class="w3-bar-item w3-button" href="/xml/dom_http.asp">XML Http Reference</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xsl_elementref.asp">XSLT Reference</a> 
+       <a class="w3-bar-item w3-button" href="/xml/schema_elements_ref.asp">XML Schema Reference</a> 
+      </div> 
+      <div class="w3-col l3 m6 w3-hide-medium w3-hide-small"> 
+       <h3>Character Sets</h3> 
+       <a class="w3-bar-item w3-button" href="/charsets/default.asp">HTML Character Sets</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_ascii.asp">HTML ASCII</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp">HTML ANSI</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_symbols.asp">HTML Symbols</a> 
+       <a class="w3-bar-item w3-button" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a> 
+      </div> 
+     </div> 
+     <br> 
+    </div> 
+    <div id="nav_exercises" class="w3-bar-block w3-card-2"> 
+     <span onclick="w3_close_nav(&quot;exercises&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span> 
+     <div class="w3-row-padding" style="padding:24px 48px"> 
+      <div class="w3-col l4 m6"> 
+       <h3>Exercises</h3> 
+       <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp">SQL Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp">jQuery Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/java/java_exercises.asp">Java Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp">C++ Exercises</a> 
+       <a class="w3-bar-item w3-button" href="/cs/cs_exercises.asp">C# Exercises</a> 
+      </div> 
+      <div class="w3-col l4 m6"> 
+       <h3>Quizzes</h3> 
+       <a class="w3-bar-item w3-button" href="/html/html_quiz.asp" target="_top">HTML Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top">PHP Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a> 
+       <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a> 
+      </div> 
+      <div class="w3-col l4 m12"> 
+       <h3>Certificates</h3> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a> 
+       <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a> 
+      </div> 
+     </div> 
+     <br> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="w3-sidebar w3-collapse" id="sidenav"> 
+   <div id="leftmenuinner"> 
+    <div class="w3-light-grey" id="leftmenuinnerinner"> 
+     <!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>--> 
+     <h2 class="left"><span class="left_h2">HTML</span> Charsets</h2> 
+     <a target="_top" href="default.asp">HTML Charsets</a> 
+     <a target="_top" href="ref_html_ascii.asp">HTML ASCII</a> 
+     <a target="_top" href="ref_html_ansi.asp">HTML WIN-1252</a> 
+     <a target="_top" href="ref_html_8859.asp">HTML ISO-8859</a> 
+     <a target="_top" href="ref_html_symbols.asp">HTML Symbols</a> 
+     <a target="_top" href="ref_html_utf8.asp">HTML UTF-8</a> 
+     <br> 
+     <h2 class="left"><span class="left_h2">HTML</span> UTF-8</h2> 
+     <a target="_top" href="ref_utf_basic_latin.asp">Latin Basic</a> 
+     <a target="_top" href="ref_utf_latin1_supplement.asp">Latin Supplement</a> 
+     <a target="_top" href="ref_utf_latin_extended_a.asp">Latin Extended A</a> 
+     <a target="_top" href="ref_utf_latin_extended_b.asp">Latin Extended B</a> 
+     <a target="_top" href="ref_utf_modifiers.asp">Modifier Letters</a> 
+     <a target="_top" href="ref_utf_diacritical.asp">Diacritical Marks</a> 
+     <a target="_top" href="ref_utf_greek.asp">Greek and Coptic</a> 
+     <a target="_top" href="ref_utf_cyrillic.asp">Cyrillic Basic</a> 
+     <a target="_top" href="ref_utf_cyrillic_supplement.asp">Cyrillic Supplement</a> 
+     <br> 
+     <h2 class="left"><span class="left_h2">HTML</span> Symbols</h2> 
+     <a target="_top" href="ref_utf_punctuation.asp">General Punctuation</a> 
+     <a target="_top" href="ref_utf_currency.asp">Currency Symbols</a> 
+     <a target="_top" href="ref_utf_letterlike.asp">Letterlike Symbols</a> 
+     <a target="_top" href="ref_utf_arrows.asp">Arrows</a> 
+     <a target="_top" href="ref_utf_math.asp">Math Operators</a> 
+     <a target="_top" href="ref_utf_box.asp">Box Drawings</a> 
+     <a target="_top" href="ref_utf_block.asp">Block Elements</a> 
+     <a target="_top" href="ref_utf_geometric.asp">Geometric Shapes</a> 
+     <a target="_top" href="ref_utf_symbols.asp">Misc Symbols</a> 
+     <a target="_top" href="ref_utf_dingbats.asp">Dingbats</a> 
+     <a target="_top" href="ref_emoji.asp">Emoji</a> 
+     <a target="_top" href="ref_emoji_smileys.asp">Emoji Smileys</a> 
+     <a target="_top" href="ref_emoji_skin_tones.asp">Emoji Skin Tones</a> 
+     <br> 
+     <h2 class="left"><span class="left_h2">HTML</span> Entities</h2> 
+     <a target="_top" href="ref_html_entities_4.asp">HTML4 Entities</a> 
+     <a target="_top" href="ref_html_entities_a.asp">HTML5 Entities A</a> 
+     <a target="_top" href="ref_html_entities_b.asp">HTML5 Entities B</a> 
+     <a target="_top" href="ref_html_entities_c.asp">HTML5 Entities C</a> 
+     <a target="_top" href="ref_html_entities_d.asp">HTML5 Entities D</a> 
+     <a target="_top" href="ref_html_entities_e.asp">HTML5 Entities E</a> 
+     <a target="_top" href="ref_html_entities_f.asp">HTML5 Entities F</a> 
+     <a target="_top" href="ref_html_entities_g.asp">HTML5 Entities G</a> 
+     <a target="_top" href="ref_html_entities_h.asp">HTML5 Entities H</a> 
+     <a target="_top" href="ref_html_entities_i.asp">HTML5 Entities I</a> 
+     <a target="_top" href="ref_html_entities_j.asp">HTML5 Entities J</a> 
+     <a target="_top" href="ref_html_entities_k.asp">HTML5 Entities K</a> 
+     <a target="_top" href="ref_html_entities_l.asp">HTML5 Entities L</a> 
+     <a target="_top" href="ref_html_entities_m.asp">HTML5 Entities M</a> 
+     <a target="_top" href="ref_html_entities_n.asp">HTML5 Entities N</a> 
+     <a target="_top" href="ref_html_entities_o.asp">HTML5 Entities O</a> 
+     <a target="_top" href="ref_html_entities_p.asp">HTML5 Entities P</a> 
+     <a target="_top" href="ref_html_entities_q.asp">HTML5 Entities Q</a> 
+     <a target="_top" href="ref_html_entities_r.asp">HTML5 Entities R</a> 
+     <a target="_top" href="ref_html_entities_s.asp">HTML5 Entities S</a> 
+     <a target="_top" href="ref_html_entities_t.asp">HTML5 Entities T</a> 
+     <a target="_top" href="ref_html_entities_u.asp">HTML5 Entities U</a> 
+     <a target="_top" href="ref_html_entities_v.asp">HTML5 Entities V</a> 
+     <a target="_top" href="ref_html_entities_w.asp">HTML5 Entities W</a> 
+     <a target="_top" href="ref_html_entities_x.asp">HTML5 Entities X</a> 
+     <a target="_top" href="ref_html_entities_y.asp">HTML5 Entities Y</a> 
+     <a target="_top" href="ref_html_entities_z.asp">HTML5 Entities Z</a> 
+     <br>
+     <br> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left:220px;"> 
+   <div class="w3-row w3-white"> 
+    <div class="w3-col l10 m12" id="main"> 
+     <div id="mainLeaderboard" style="overflow:hidden;"> 
+      <!-- MainLeaderboard--> 
+      <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>--> 
+      <div id="snhb-main_leaderboard-0"></div> 
+      <!-- adspace leaderboard --> 
+     </div> 
+     <h1>HTML <span class="color_h1">ISO-8859-1</span> Reference </h1> 
+     <div class="w3-clear nextprev"> 
+      <a class="w3-left w3-btn" href="ref_html_ansi.asp">? Previous</a> 
+      <a class="w3-right w3-btn" href="ref_html_symbols.asp">Next ?</a> 
+     </div> 
+     <hr> 
+     <h2>ISO-8859-1</h2> 
+     <p>ISO-8859-1 was the default character in HTML 4.01.</p> 
+     <p>ISO (The International Standards Organization) defines the standard character sets for different alphabets/languages.</p> 
+     <p>The different variants of ISO-8859 are listed at the bottom of this page.</p> 
+     <hr> 
+     <h2>ISO-8859-1 Character Set</h2> 
+     <p>The first part of ISO-8859-1 (entity numbers from 0-127) is the original ASCII character-set. It contains numbers, upper and lowercase English letters, and some special characters.</p> 
+     <p>For a closer look, please study our <a href="ref_html_ascii.asp">Complete ASCII Reference</a>.</p> 
+     <div class="w3-responsive"> 
+      <table class="w3-table-all charset-tryit"> 
+       <tbody>
+        <tr> 
+         <th style="width:10%">Character</th> 
+         <th style="width:10%">Number</th> 
+         <th style="width:15%">Entity Name</th> 
+         <th>Description</th> 
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>0 - 31</td>
+         <td>&nbsp;</td>
+         <td>Control characters</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>32</td>
+         <td>&nbsp;</td>
+         <td>space</td>
+        </tr> 
+        <tr>
+         <td>!</td>
+         <td>33</td>
+         <td>&nbsp;</td>
+         <td>exclamation mark</td>
+        </tr> 
+        <tr>
+         <td>"</td>
+         <td>34</td>
+         <td>&amp;quot;</td>
+         <td>quotation mark</td>
+        </tr> 
+        <tr>
+         <td>#</td>
+         <td>35</td>
+         <td>&nbsp;</td>
+         <td>number sign</td>
+        </tr> 
+        <tr>
+         <td>$</td>
+         <td>36</td>
+         <td>&nbsp;</td>
+         <td>dollar sign</td>
+        </tr> 
+        <tr>
+         <td>%</td>
+         <td>37</td>
+         <td>&nbsp;</td>
+         <td>percent sign</td>
+        </tr> 
+        <tr>
+         <td>&amp;</td>
+         <td>38</td>
+         <td>&amp;amp;</td>
+         <td>ampersand</td>
+        </tr> 
+        <tr>
+         <td>'</td>
+         <td>39</td>
+         <td>&nbsp;</td>
+         <td>apostrophe</td>
+        </tr> 
+        <tr>
+         <td>(</td>
+         <td>40</td>
+         <td>&nbsp;</td>
+         <td>left parenthesis</td>
+        </tr> 
+        <tr>
+         <td>)</td>
+         <td>41</td>
+         <td>&nbsp;</td>
+         <td>right parenthesis</td>
+        </tr> 
+        <tr>
+         <td>*</td>
+         <td>42</td>
+         <td>&nbsp;</td>
+         <td>asterisk</td>
+        </tr> 
+        <tr>
+         <td>+</td>
+         <td>43</td>
+         <td>&nbsp;</td>
+         <td>plus sign</td>
+        </tr> 
+        <tr>
+         <td>,</td>
+         <td>44</td>
+         <td>&nbsp;</td>
+         <td>comma</td>
+        </tr> 
+        <tr>
+         <td>-</td>
+         <td>45</td>
+         <td>&nbsp;</td>
+         <td>hyphen-minus</td>
+        </tr> 
+        <tr>
+         <td>.</td>
+         <td>46</td>
+         <td>&nbsp;</td>
+         <td>full stop</td>
+        </tr> 
+        <tr>
+         <td>/</td>
+         <td>47</td>
+         <td>&nbsp;</td>
+         <td>solidus</td>
+        </tr> 
+        <tr>
+         <td>0</td>
+         <td>48</td>
+         <td>&nbsp;</td>
+         <td>digit zero</td>
+        </tr> 
+        <tr>
+         <td>1</td>
+         <td>49</td>
+         <td>&nbsp;</td>
+         <td>digit one</td>
+        </tr> 
+        <tr>
+         <td>2</td>
+         <td>50</td>
+         <td>&nbsp;</td>
+         <td>digit two</td>
+        </tr> 
+        <tr>
+         <td>3</td>
+         <td>51</td>
+         <td>&nbsp;</td>
+         <td>digit three</td>
+        </tr> 
+        <tr>
+         <td>4</td>
+         <td>52</td>
+         <td>&nbsp;</td>
+         <td>digit four</td>
+        </tr> 
+        <tr>
+         <td>5</td>
+         <td>53</td>
+         <td>&nbsp;</td>
+         <td>digit five</td>
+        </tr> 
+        <tr>
+         <td>6</td>
+         <td>54</td>
+         <td>&nbsp;</td>
+         <td>digit six</td>
+        </tr> 
+        <tr>
+         <td>7</td>
+         <td>55</td>
+         <td>&nbsp;</td>
+         <td>digit seven</td>
+        </tr> 
+        <tr>
+         <td>8</td>
+         <td>56</td>
+         <td>&nbsp;</td>
+         <td>digit eight</td>
+        </tr> 
+        <tr>
+         <td>9</td>
+         <td>57</td>
+         <td>&nbsp;</td>
+         <td>digit nine</td>
+        </tr> 
+        <tr>
+         <td>:</td>
+         <td>58</td>
+         <td>&nbsp;</td>
+         <td>colon</td>
+        </tr> 
+        <tr>
+         <td>;</td>
+         <td>59</td>
+         <td>&nbsp;</td>
+         <td>semicolon</td>
+        </tr> 
+        <tr>
+         <td>&lt;</td>
+         <td>60</td>
+         <td>&amp;lt;</td>
+         <td>less-than sign</td>
+        </tr> 
+        <tr>
+         <td>=</td>
+         <td>61</td>
+         <td>&nbsp;</td>
+         <td>equals sign</td>
+        </tr> 
+        <tr>
+         <td>&gt;</td>
+         <td>62</td>
+         <td>&amp;gt;</td>
+         <td>greater-than sign</td>
+        </tr> 
+        <tr>
+         <td>?</td>
+         <td>63</td>
+         <td>&nbsp;</td>
+         <td>question mark</td>
+        </tr> 
+        <tr>
+         <td>@</td>
+         <td>64</td>
+         <td>&nbsp;</td>
+         <td>commercial at</td>
+        </tr> 
+        <tr>
+         <td>A</td>
+         <td>65</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter A</td>
+        </tr> 
+        <tr>
+         <td>B</td>
+         <td>66</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter B</td>
+        </tr> 
+        <tr>
+         <td>C</td>
+         <td>67</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter C</td>
+        </tr> 
+        <tr>
+         <td>D</td>
+         <td>68</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter D</td>
+        </tr> 
+        <tr>
+         <td>E</td>
+         <td>69</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter E</td>
+        </tr> 
+        <tr>
+         <td>F</td>
+         <td>70</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter F</td>
+        </tr> 
+        <tr>
+         <td>G</td>
+         <td>71</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter G</td>
+        </tr> 
+        <tr>
+         <td>H</td>
+         <td>72</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter H</td>
+        </tr> 
+        <tr>
+         <td>I</td>
+         <td>73</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter I</td>
+        </tr> 
+        <tr>
+         <td>J</td>
+         <td>74</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter J</td>
+        </tr> 
+        <tr>
+         <td>K</td>
+         <td>75</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter K</td>
+        </tr> 
+        <tr>
+         <td>L</td>
+         <td>76</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter L</td>
+        </tr> 
+        <tr>
+         <td>M</td>
+         <td>77</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter M</td>
+        </tr> 
+        <tr>
+         <td>N</td>
+         <td>78</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter N</td>
+        </tr> 
+        <tr>
+         <td>O</td>
+         <td>79</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter O</td>
+        </tr> 
+        <tr>
+         <td>P</td>
+         <td>80</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter P</td>
+        </tr> 
+        <tr>
+         <td>Q</td>
+         <td>81</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter Q</td>
+        </tr> 
+        <tr>
+         <td>R</td>
+         <td>82</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter R</td>
+        </tr> 
+        <tr>
+         <td>S</td>
+         <td>83</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter S</td>
+        </tr> 
+        <tr>
+         <td>T</td>
+         <td>84</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter T</td>
+        </tr> 
+        <tr>
+         <td>U</td>
+         <td>85</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter U</td>
+        </tr> 
+        <tr>
+         <td>V</td>
+         <td>86</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter V</td>
+        </tr> 
+        <tr>
+         <td>W</td>
+         <td>87</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter W</td>
+        </tr> 
+        <tr>
+         <td>X</td>
+         <td>88</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter X</td>
+        </tr> 
+        <tr>
+         <td>Y</td>
+         <td>89</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter Y</td>
+        </tr> 
+        <tr>
+         <td>Z</td>
+         <td>90</td>
+         <td>&nbsp;</td>
+         <td>Latin capital letter Z</td>
+        </tr> 
+        <tr>
+         <td>[</td>
+         <td>91</td>
+         <td>&nbsp;</td>
+         <td>left square bracket</td>
+        </tr> 
+        <tr>
+         <td>\</td>
+         <td>92</td>
+         <td>&nbsp;</td>
+         <td>reverse solidus</td>
+        </tr> 
+        <tr>
+         <td>]</td>
+         <td>93</td>
+         <td>&nbsp;</td>
+         <td>right square bracket</td>
+        </tr> 
+        <tr>
+         <td>^</td>
+         <td>94</td>
+         <td>&nbsp;</td>
+         <td>circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>_</td>
+         <td>95</td>
+         <td>&nbsp;</td>
+         <td>low line</td>
+        </tr> 
+        <tr>
+         <td>`</td>
+         <td>96</td>
+         <td>&nbsp;</td>
+         <td>grave accent</td>
+        </tr> 
+        <tr>
+         <td>a</td>
+         <td>97</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter a</td>
+        </tr> 
+        <tr>
+         <td>b</td>
+         <td>98</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter b</td>
+        </tr> 
+        <tr>
+         <td>c</td>
+         <td>99</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter c</td>
+        </tr> 
+        <tr>
+         <td>d</td>
+         <td>100</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter d</td>
+        </tr> 
+        <tr>
+         <td>e</td>
+         <td>101</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter e</td>
+        </tr> 
+        <tr>
+         <td>f</td>
+         <td>102</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter f</td>
+        </tr> 
+        <tr>
+         <td>g</td>
+         <td>103</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter g</td>
+        </tr> 
+        <tr>
+         <td>h</td>
+         <td>104</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter h</td>
+        </tr> 
+        <tr>
+         <td>i</td>
+         <td>105</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter i</td>
+        </tr> 
+        <tr>
+         <td>j</td>
+         <td>106</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter j</td>
+        </tr> 
+        <tr>
+         <td>k</td>
+         <td>107</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter k</td>
+        </tr> 
+        <tr>
+         <td>l</td>
+         <td>108</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter l</td>
+        </tr> 
+        <tr>
+         <td>m</td>
+         <td>109</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter m</td>
+        </tr> 
+        <tr>
+         <td>n</td>
+         <td>110</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter n</td>
+        </tr> 
+        <tr>
+         <td>o</td>
+         <td>111</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter o</td>
+        </tr> 
+        <tr>
+         <td>p</td>
+         <td>112</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter p</td>
+        </tr> 
+        <tr>
+         <td>q</td>
+         <td>113</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter q</td>
+        </tr> 
+        <tr>
+         <td>r</td>
+         <td>114</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter r</td>
+        </tr> 
+        <tr>
+         <td>s</td>
+         <td>115</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter s</td>
+        </tr> 
+        <tr>
+         <td>t</td>
+         <td>116</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter t</td>
+        </tr> 
+        <tr>
+         <td>u</td>
+         <td>117</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter u</td>
+        </tr> 
+        <tr>
+         <td>v</td>
+         <td>118</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter v</td>
+        </tr> 
+        <tr>
+         <td>w</td>
+         <td>119</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter w</td>
+        </tr> 
+        <tr>
+         <td>x</td>
+         <td>120</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter x</td>
+        </tr> 
+        <tr>
+         <td>y</td>
+         <td>121</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter y</td>
+        </tr> 
+        <tr>
+         <td>z</td>
+         <td>122</td>
+         <td>&nbsp;</td>
+         <td>Latin small letter z</td>
+        </tr> 
+        <tr>
+         <td>{</td>
+         <td>123</td>
+         <td>&nbsp;</td>
+         <td>left curly bracket</td>
+        </tr> 
+        <tr>
+         <td>|</td>
+         <td>124</td>
+         <td>&nbsp;</td>
+         <td>vertical line</td>
+        </tr> 
+        <tr>
+         <td>}</td>
+         <td>125</td>
+         <td>&nbsp;</td>
+         <td>right curly bracket</td>
+        </tr> 
+        <tr>
+         <td>~</td>
+         <td>126</td>
+         <td>&nbsp;</td>
+         <td>tilde</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>127</td>
+         <td>&nbsp;</td>
+         <td>Control character</td>
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <hr> 
+     <div id="midcontentadcontainer" style="overflow:auto;text-align:center"> 
+      <!-- MidContent --> 
+      <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>--> 
+      <div id="snhb-mid_content-0"></div> 
+     </div> 
+     <hr> 
+     <h2>ISO-8859-1 and Windows-1252</h2> 
+     <p>ISO-8859-1 is very similar to Windows-1252.</p> 
+     <p><strong>In ISO-8859-1, the characters from 128 to 159 are not defined. </strong> </p> 
+     <p>In Windows-1252, the characters from 128 to 159 are used for some useful symbols.</p> 
+     <p>For a closer look, please study our <a href="ref_html_ansi.asp">Complete ANSI (Windows-1252) Reference</a>.</p> 
+     <p>Since many web sites declare ISO-8859-1 and use the values from 128 to 159 as if they were using Windows-1252, most browsers will display these characters from the Windows-1252 character set instead of nothing.</p> 
+     <div class="w3-responsive"> 
+      <table class="w3-table-all charset-tryit"> 
+       <tbody>
+        <tr> 
+         <th style="width:10%">Character</th> 
+         <th style="width:10%">Number</th> 
+         <th style="width:15%">Entity Name</th> 
+         <th>Description</th> 
+        </tr> 
+        <tr>
+         <td>€</td>
+         <td>128</td>
+         <td>&amp;euro;</td>
+         <td>euro sign</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>129</td>
+         <td>&nbsp;</td>
+         <td>NOT USED</td>
+        </tr> 
+        <tr>
+         <td>‚</td>
+         <td>130</td>
+         <td>&amp;sbquo;</td>
+         <td>single low-9 quotation mark</td>
+        </tr> 
+        <tr>
+         <td>ƒ</td>
+         <td>131</td>
+         <td>&amp;fnof;</td>
+         <td>Latin small letter f with hook</td>
+        </tr> 
+        <tr>
+         <td>„</td>
+         <td>132</td>
+         <td>&amp;bdquo;</td>
+         <td>double low-9 quotation mark</td>
+        </tr> 
+        <tr>
+         <td>…</td>
+         <td>133</td>
+         <td>&amp;hellip;</td>
+         <td>horizontal ellipsis</td>
+        </tr> 
+        <tr>
+         <td>†</td>
+         <td>134</td>
+         <td>&amp;dagger;</td>
+         <td>dagger</td>
+        </tr> 
+        <tr>
+         <td>‡</td>
+         <td>135</td>
+         <td>&amp;Dagger;</td>
+         <td>double dagger</td>
+        </tr> 
+        <tr>
+         <td>ˆ</td>
+         <td>136</td>
+         <td>&amp;circ;</td>
+         <td>modifier letter circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>‰</td>
+         <td>137</td>
+         <td>&amp;permil;</td>
+         <td>per mille sign</td>
+        </tr> 
+        <tr>
+         <td>Š</td>
+         <td>138</td>
+         <td>&amp;Scaron;</td>
+         <td>Latin capital letter S with caron</td>
+        </tr> 
+        <tr>
+         <td>‹</td>
+         <td>139</td>
+         <td>&amp;lsaquo;</td>
+         <td>single left-pointing angle quotation mark</td>
+        </tr> 
+        <tr>
+         <td>Œ</td>
+         <td>140</td>
+         <td>&amp;OElig;</td>
+         <td>Latin capital ligature OE</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>141</td>
+         <td>&nbsp;</td>
+         <td>NOT USED</td>
+        </tr> 
+        <tr>
+         <td>Ž</td>
+         <td>142</td>
+         <td>&amp;Zcaron;</td>
+         <td>Latin capital letter Z with caron</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>143</td>
+         <td>&nbsp;</td>
+         <td>NOT USED</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>144</td>
+         <td>&nbsp;</td>
+         <td>NOT USED</td>
+        </tr> 
+        <tr>
+         <td>‘</td>
+         <td>145</td>
+         <td>&amp;lsquo;</td>
+         <td>left single quotation mark</td>
+        </tr> 
+        <tr>
+         <td>’</td>
+         <td>146</td>
+         <td>&amp;rsquo;</td>
+         <td>right single quotation mark</td>
+        </tr> 
+        <tr>
+         <td>“</td>
+         <td>147</td>
+         <td>&amp;ldquo;</td>
+         <td>left double quotation mark</td>
+        </tr> 
+        <tr>
+         <td>”</td>
+         <td>148</td>
+         <td>&amp;rdquo;</td>
+         <td>right double quotation mark</td>
+        </tr> 
+        <tr>
+         <td>•</td>
+         <td>149</td>
+         <td>&amp;bull;</td>
+         <td>bullet</td>
+        </tr> 
+        <tr>
+         <td>–</td>
+         <td>150</td>
+         <td>&amp;ndash;</td>
+         <td>en dash</td>
+        </tr> 
+        <tr>
+         <td>—</td>
+         <td>151</td>
+         <td>&amp;mdash;</td>
+         <td>em dash</td>
+        </tr> 
+        <tr>
+         <td>˜</td>
+         <td>152</td>
+         <td>&amp;tilde;</td>
+         <td>small tilde</td>
+        </tr> 
+        <tr>
+         <td>™</td>
+         <td>153</td>
+         <td>&amp;trade;</td>
+         <td>trade mark sign</td>
+        </tr> 
+        <tr>
+         <td>š</td>
+         <td>154</td>
+         <td>&amp;scaron;</td>
+         <td>Latin small letter s with caron</td>
+        </tr> 
+        <tr>
+         <td>›</td>
+         <td>155</td>
+         <td>&amp;rsaquo;</td>
+         <td>single right-pointing angle quotation mark</td>
+        </tr> 
+        <tr>
+         <td>œ</td>
+         <td>156</td>
+         <td>&amp;oelig;</td>
+         <td>Latin small ligature oe</td>
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>157</td>
+         <td>&nbsp;</td>
+         <td>NOT USED</td>
+        </tr> 
+        <tr>
+         <td>ž</td>
+         <td>158</td>
+         <td>&amp;zcaron;</td>
+         <td>Latin small letter z with caron</td>
+        </tr> 
+        <tr>
+         <td>Ÿ</td>
+         <td>159</td>
+         <td>&amp;Yuml;</td>
+         <td>Latin capital letter Y with diaeresis</td>
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <hr> 
+     <h2>ISO-8859-1 Symbols</h2> 
+     <p>The next part of ISO-8859-1 (codes from 160-191) contains commonly used special characters.</p> 
+     <div class="w3-responsive"> 
+      <table class="w3-table-all notranslate charset-tryit"> 
+       <tbody>
+        <tr> 
+         <th style="width:15%">Character</th> 
+         <th style="width:15%">Entity Number</th> 
+         <th style="width:15%">Entity Name</th> 
+         <th>Description</th> 
+        </tr> 
+        <tr>
+         <td>&nbsp;</td>
+         <td>&amp;#160;</td>
+         <td>&amp;nbsp;</td>
+         <td>non-breaking space</td>
+        </tr> 
+        <tr>
+         <td>¡</td>
+         <td>&amp;#161;</td>
+         <td>&amp;iexcl;</td>
+         <td>inverted exclamation mark</td>
+        </tr> 
+        <tr>
+         <td>¢</td>
+         <td>&amp;#162;</td>
+         <td>&amp;cent;</td>
+         <td>cent</td>
+        </tr> 
+        <tr>
+         <td>£</td>
+         <td>&amp;#163;</td>
+         <td>&amp;pound;</td>
+         <td>pound</td>
+        </tr> 
+        <tr>
+         <td>¤</td>
+         <td>&amp;#164;</td>
+         <td>&amp;curren;</td>
+         <td>currency</td>
+        </tr> 
+        <tr>
+         <td>¥</td>
+         <td>&amp;#165;</td>
+         <td>&amp;yen;</td>
+         <td>yen</td>
+        </tr> 
+        <tr>
+         <td>¦</td>
+         <td>&amp;#166;</td>
+         <td>&amp;brvbar;</td>
+         <td>broken vertical bar</td>
+        </tr> 
+        <tr>
+         <td>§</td>
+         <td>&amp;#167;</td>
+         <td>&amp;sect;</td>
+         <td>section</td>
+        </tr> 
+        <tr>
+         <td>¨</td>
+         <td>&amp;#168;</td>
+         <td>&amp;uml;</td>
+         <td>spacing diaeresis</td>
+        </tr> 
+        <tr>
+         <td>©</td>
+         <td>&amp;#169;</td>
+         <td>&amp;copy;</td>
+         <td>copyright</td>
+        </tr> 
+        <tr>
+         <td>ª</td>
+         <td>&amp;#170;</td>
+         <td>&amp;ordf;</td>
+         <td>feminine ordinal indicator</td>
+        </tr> 
+        <tr>
+         <td>«</td>
+         <td>&amp;#171;</td>
+         <td>&amp;laquo;</td>
+         <td>angle quotation mark (left)</td>
+        </tr> 
+        <tr>
+         <td>¬</td>
+         <td>&amp;#172;</td>
+         <td>&amp;not;</td>
+         <td>negation</td>
+        </tr> 
+        <tr>
+         <td>­</td>
+         <td>&amp;#173;</td>
+         <td>&amp;shy;</td>
+         <td>soft hyphen</td>
+        </tr> 
+        <tr>
+         <td>®</td>
+         <td>&amp;#174;</td>
+         <td>&amp;reg;</td>
+         <td>registered trademark</td>
+        </tr> 
+        <tr>
+         <td>¯</td>
+         <td>&amp;#175;</td>
+         <td>&amp;macr;</td>
+         <td>spacing macron</td>
+        </tr> 
+        <tr>
+         <td>°</td>
+         <td>&amp;#176;</td>
+         <td>&amp;deg;</td>
+         <td>degree</td>
+        </tr> 
+        <tr>
+         <td>±</td>
+         <td>&amp;#177;</td>
+         <td>&amp;plusmn;</td>
+         <td>plus-or-minus</td>
+        </tr> 
+        <tr>
+         <td>²</td>
+         <td>&amp;#178;</td>
+         <td>&amp;sup2;</td>
+         <td>superscript 2</td>
+        </tr> 
+        <tr>
+         <td>³</td>
+         <td>&amp;#179;</td>
+         <td>&amp;sup3;</td>
+         <td>superscript 3</td>
+        </tr> 
+        <tr>
+         <td>´</td>
+         <td>&amp;#180;</td>
+         <td>&amp;acute;</td>
+         <td>spacing acute</td>
+        </tr> 
+        <tr>
+         <td>µ</td>
+         <td>&amp;#181;</td>
+         <td>&amp;micro;</td>
+         <td>micro</td>
+        </tr> 
+        <tr>
+         <td>¶</td>
+         <td>&amp;#182;</td>
+         <td>&amp;para;</td>
+         <td>paragraph</td>
+        </tr> 
+        <tr>
+         <td>·</td>
+         <td>&amp;#183;</td>
+         <td>&amp;middot;</td>
+         <td>middle dot</td>
+        </tr> 
+        <tr>
+         <td>¸</td>
+         <td>&amp;#184;</td>
+         <td>&amp;cedil;</td>
+         <td>spacing cedilla</td>
+        </tr> 
+        <tr>
+         <td>¹</td>
+         <td>&amp;#185;</td>
+         <td>&amp;sup1;</td>
+         <td>superscript 1</td>
+        </tr> 
+        <tr>
+         <td>º</td>
+         <td>&amp;#186;</td>
+         <td>&amp;ordm;</td>
+         <td>masculine ordinal indicator</td>
+        </tr> 
+        <tr>
+         <td>»</td>
+         <td>&amp;#187;</td>
+         <td>&amp;raquo;</td>
+         <td>angle quotation mark (right)</td>
+        </tr> 
+        <tr>
+         <td>¼</td>
+         <td>&amp;#188;</td>
+         <td>&amp;frac14;</td>
+         <td>fraction 1/4</td>
+        </tr> 
+        <tr>
+         <td>½</td>
+         <td>&amp;#189;</td>
+         <td>&amp;frac12;</td>
+         <td>fraction 1/2</td>
+        </tr> 
+        <tr>
+         <td>¾</td>
+         <td>&amp;#190;</td>
+         <td>&amp;frac34;</td>
+         <td>fraction 3/4</td>
+        </tr> 
+        <tr>
+         <td>¿</td>
+         <td>&amp;#191;</td>
+         <td>&amp;iquest;</td>
+         <td>inverted question mark</td>
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <hr> 
+     <h2>ISO-8859-1 Characters</h2> 
+     <p>The higher part of ISO-8859-1 (codes from 192-255, except 215 and 247) contains characters used in Western European countries.</p> 
+     <div class="w3-responsive"> 
+      <table class="w3-table-all notranslate charset-tryit"> 
+       <tbody>
+        <tr> 
+         <th style="width:15%">Character</th> 
+         <th style="width:15%">Entity Number</th> 
+         <th style="width:15%">Entity Name</th> 
+         <th>Description</th> 
+        </tr> 
+        <tr>
+         <td>À</td>
+         <td>&amp;#192;</td>
+         <td>&amp;Agrave;</td>
+         <td>capital a, grave accent</td>
+        </tr> 
+        <tr>
+         <td>Á</td>
+         <td>&amp;#193;</td>
+         <td>&amp;Aacute;</td>
+         <td>capital a, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Â</td>
+         <td>&amp;#194;</td>
+         <td>&amp;Acirc;</td>
+         <td>capital a, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>Ã</td>
+         <td>&amp;#195;</td>
+         <td>&amp;Atilde;</td>
+         <td>capital a, tilde</td>
+        </tr> 
+        <tr>
+         <td>Ä</td>
+         <td>&amp;#196;</td>
+         <td>&amp;Auml;</td>
+         <td>capital a, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>Å</td>
+         <td>&amp;#197;</td>
+         <td>&amp;Aring;</td>
+         <td>capital a, ring</td>
+        </tr> 
+        <tr>
+         <td>Æ</td>
+         <td>&amp;#198;</td>
+         <td>&amp;AElig;</td>
+         <td>capital ae</td>
+        </tr> 
+        <tr>
+         <td>Ç</td>
+         <td>&amp;#199;</td>
+         <td>&amp;Ccedil;</td>
+         <td>capital c, cedilla</td>
+        </tr> 
+        <tr>
+         <td>È</td>
+         <td>&amp;#200;</td>
+         <td>&amp;Egrave;</td>
+         <td>capital e, grave accent</td>
+        </tr> 
+        <tr>
+         <td>É</td>
+         <td>&amp;#201;</td>
+         <td>&amp;Eacute;</td>
+         <td>capital e, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Ê</td>
+         <td>&amp;#202;</td>
+         <td>&amp;Ecirc;</td>
+         <td>capital e, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>Ë</td>
+         <td>&amp;#203;</td>
+         <td>&amp;Euml;</td>
+         <td>capital e, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>Ì</td>
+         <td>&amp;#204;</td>
+         <td>&amp;Igrave;</td>
+         <td>capital i, grave accent</td>
+        </tr> 
+        <tr>
+         <td>Í</td>
+         <td>&amp;#205;</td>
+         <td>&amp;Iacute;</td>
+         <td>capital i, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Î</td>
+         <td>&amp;#206;</td>
+         <td>&amp;Icirc;</td>
+         <td>capital i, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>Ï</td>
+         <td>&amp;#207;</td>
+         <td>&amp;Iuml;</td>
+         <td>capital i, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>Ð</td>
+         <td>&amp;#208;</td>
+         <td>&amp;ETH;</td>
+         <td>capital eth, Icelandic</td>
+        </tr> 
+        <tr>
+         <td>Ñ</td>
+         <td>&amp;#209;</td>
+         <td>&amp;Ntilde;</td>
+         <td>capital n, tilde</td>
+        </tr> 
+        <tr>
+         <td>Ò</td>
+         <td>&amp;#210;</td>
+         <td>&amp;Ograve;</td>
+         <td>capital o, grave accent</td>
+        </tr> 
+        <tr>
+         <td>Ó</td>
+         <td>&amp;#211;</td>
+         <td>&amp;Oacute;</td>
+         <td>capital o, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Ô</td>
+         <td>&amp;#212;</td>
+         <td>&amp;Ocirc;</td>
+         <td>capital o, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>Õ</td>
+         <td>&amp;#213;</td>
+         <td>&amp;Otilde;</td>
+         <td>capital o, tilde</td>
+        </tr> 
+        <tr>
+         <td>Ö</td>
+         <td>&amp;#214;</td>
+         <td>&amp;Ouml;</td>
+         <td>capital o, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>×</td>
+         <td>&amp;#215;</td>
+         <td>&amp;times;</td>
+         <td>multiplication</td>
+        </tr> 
+        <tr>
+         <td>Ø</td>
+         <td>&amp;#216;</td>
+         <td>&amp;Oslash;</td>
+         <td>capital o, slash</td>
+        </tr> 
+        <tr>
+         <td>Ù</td>
+         <td>&amp;#217;</td>
+         <td>&amp;Ugrave;</td>
+         <td>capital u, grave accent</td>
+        </tr> 
+        <tr>
+         <td>Ú</td>
+         <td>&amp;#218;</td>
+         <td>&amp;Uacute;</td>
+         <td>capital u, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Û</td>
+         <td>&amp;#219;</td>
+         <td>&amp;Ucirc;</td>
+         <td>capital u, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>Ü</td>
+         <td>&amp;#220;</td>
+         <td>&amp;Uuml;</td>
+         <td>capital u, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>Ý</td>
+         <td>&amp;#221;</td>
+         <td>&amp;Yacute;</td>
+         <td>capital y, acute accent</td>
+        </tr> 
+        <tr>
+         <td>Þ</td>
+         <td>&amp;#222;</td>
+         <td>&amp;THORN;</td>
+         <td>capital THORN, Icelandic</td>
+        </tr> 
+        <tr>
+         <td>ß</td>
+         <td>&amp;#223;</td>
+         <td>&amp;szlig;</td>
+         <td>small sharp s, German</td>
+        </tr> 
+        <tr>
+         <td>à</td>
+         <td>&amp;#224;</td>
+         <td>&amp;agrave;</td>
+         <td>small a, grave accent</td>
+        </tr> 
+        <tr>
+         <td>á</td>
+         <td>&amp;#225;</td>
+         <td>&amp;aacute;</td>
+         <td>small a, acute accent</td>
+        </tr> 
+        <tr>
+         <td>â</td>
+         <td>&amp;#226;</td>
+         <td>&amp;acirc;</td>
+         <td>small a, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>ã</td>
+         <td>&amp;#227;</td>
+         <td>&amp;atilde;</td>
+         <td>small a, tilde</td>
+        </tr> 
+        <tr>
+         <td>ä</td>
+         <td>&amp;#228;</td>
+         <td>&amp;auml;</td>
+         <td>small a, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>å</td>
+         <td>&amp;#229;</td>
+         <td>&amp;aring;</td>
+         <td>small a, ring</td>
+        </tr> 
+        <tr>
+         <td>æ</td>
+         <td>&amp;#230;</td>
+         <td>&amp;aelig;</td>
+         <td>small ae</td>
+        </tr> 
+        <tr>
+         <td>ç</td>
+         <td>&amp;#231;</td>
+         <td>&amp;ccedil;</td>
+         <td>small c, cedilla</td>
+        </tr> 
+        <tr>
+         <td>è</td>
+         <td>&amp;#232;</td>
+         <td>&amp;egrave;</td>
+         <td>small e, grave accent</td>
+        </tr> 
+        <tr>
+         <td>é</td>
+         <td>&amp;#233;</td>
+         <td>&amp;eacute;</td>
+         <td>small e, acute accent</td>
+        </tr> 
+        <tr>
+         <td>ê</td>
+         <td>&amp;#234;</td>
+         <td>&amp;ecirc;</td>
+         <td>small e, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>ë</td>
+         <td>&amp;#235;</td>
+         <td>&amp;euml;</td>
+         <td>small e, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>ì</td>
+         <td>&amp;#236;</td>
+         <td>&amp;igrave;</td>
+         <td>small i, grave accent</td>
+        </tr> 
+        <tr>
+         <td>í</td>
+         <td>&amp;#237;</td>
+         <td>&amp;iacute;</td>
+         <td>small i, acute accent</td>
+        </tr> 
+        <tr>
+         <td>î</td>
+         <td>&amp;#238;</td>
+         <td>&amp;icirc;</td>
+         <td>small i, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>ï</td>
+         <td>&amp;#239;</td>
+         <td>&amp;iuml;</td>
+         <td>small i, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>ð</td>
+         <td>&amp;#240;</td>
+         <td>&amp;eth;</td>
+         <td>small eth, Icelandic</td>
+        </tr> 
+        <tr>
+         <td>ñ</td>
+         <td>&amp;#241;</td>
+         <td>&amp;ntilde;</td>
+         <td>small n, tilde</td>
+        </tr> 
+        <tr>
+         <td>ò</td>
+         <td>&amp;#242;</td>
+         <td>&amp;ograve;</td>
+         <td>small o, grave accent</td>
+        </tr> 
+        <tr>
+         <td>ó</td>
+         <td>&amp;#243;</td>
+         <td>&amp;oacute;</td>
+         <td>small o, acute accent</td>
+        </tr> 
+        <tr>
+         <td>ô</td>
+         <td>&amp;#244;</td>
+         <td>&amp;ocirc;</td>
+         <td>small o, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>õ</td>
+         <td>&amp;#245;</td>
+         <td>&amp;otilde;</td>
+         <td>small o, tilde</td>
+        </tr> 
+        <tr>
+         <td>ö</td>
+         <td>&amp;#246;</td>
+         <td>&amp;ouml;</td>
+         <td>small o, umlaut mark</td> 
+        </tr>
+        <tr>
+         <td>÷</td>
+         <td>&amp;#247;</td>
+         <td>&amp;divide;</td>
+         <td>division</td>
+        </tr> 
+        <tr>
+         <td>ø</td>
+         <td>&amp;#248;</td>
+         <td>&amp;oslash;</td>
+         <td>small o, slash</td>
+        </tr> 
+        <tr>
+         <td>ù</td>
+         <td>&amp;#249;</td>
+         <td>&amp;ugrave;</td>
+         <td>small u, grave accent</td>
+        </tr> 
+        <tr>
+         <td>ú</td>
+         <td>&amp;#250;</td>
+         <td>&amp;uacute;</td>
+         <td>small u, acute accent</td>
+        </tr> 
+        <tr>
+         <td>û</td>
+         <td>&amp;#251;</td>
+         <td>&amp;ucirc;</td>
+         <td>small u, circumflex accent</td>
+        </tr> 
+        <tr>
+         <td>ü</td>
+         <td>&amp;#252;</td>
+         <td>&amp;uuml;</td>
+         <td>small u, umlaut mark</td>
+        </tr> 
+        <tr>
+         <td>ý</td>
+         <td>&amp;#253;</td>
+         <td>&amp;yacute;</td>
+         <td>small y, acute accent</td>
+        </tr> 
+        <tr>
+         <td>þ</td>
+         <td>&amp;#254;</td>
+         <td>&amp;thorn;</td>
+         <td>small thorn, Icelandic</td>
+        </tr> 
+        <tr>
+         <td>ÿ</td>
+         <td>&amp;#255;</td>
+         <td>&amp;yuml;</td>
+         <td>small y, umlaut mark</td>
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <hr> 
+     <h2>Variants of ISO-8859</h2> 
+     <div class="w3-responsive"> 
+      <table class="w3-table-all notranslate"> 
+       <tbody>
+        <tr> 
+         <th style="width:130px">Number</th> 
+         <th style="width:180px">Description</th> 
+         <th>Covers</th> 
+        </tr> 
+        <tr>
+         <td>8859-1</td>
+         <td>Latin 1</td>
+         <td>North America, Western Europe, Latin America, the Caribbean, Canada, Africa.</td>
+        </tr> 
+        <tr>
+         <td>8859-2</td>
+         <td>Latin 2</td>
+         <td>Eastern Europe.</td>
+        </tr> 
+        <tr>
+         <td>8859-3</td>
+         <td>Latin 3</td>
+         <td>SE Europe, Esperanto, miscellaneous others.</td>
+        </tr> 
+        <tr>
+         <td>8859-4</td>
+         <td>Latin 4</td>
+         <td>Scandinavia/Baltics (and others not in ISO-8859-1).</td>
+        </tr> 
+        <tr>
+         <td>8859-5</td>
+         <td>Latin/Cyrillic</td>
+         <td>The Cyrillic alphabet. Bulgarian, Belarusian, Russian and Macedonian.</td>
+        </tr> 
+        <tr>
+         <td>8859-6</td>
+         <td>Latin/Arabic</td>
+         <td>The Arabic alphabet.</td>
+        </tr> 
+        <tr>
+         <td>8859-7</td>
+         <td>Latin/Greek</td>
+         <td>The modern Greek alphabet and mathematical symbols derived from the Greek.</td>
+        </tr> 
+        <tr>
+         <td>8859-8</td>
+         <td>Latin/Hebrew</td>
+         <td>The Hebrew alphabet.</td>
+        </tr> 
+        <tr>
+         <td>8859-9</td>
+         <td>Latin/Turkish</td>
+         <td>The Turkish alphabet. Same as ISO-8859-1 except Turkish characters replace Icelandic.</td>
+        </tr> 
+        <tr>
+         <td>8859-10</td>
+         <td>Latin/Nordic</td>
+         <td>Nordic alphabets. Lappish, Nordic, Eskimo.</td>
+        </tr> 
+        <tr>
+         <td>8859-15</td>
+         <td>Latin 9 (Latin 0)</td>
+         <td>Similar to ISO-8859-1 but replaces some less common symbols with the euro sign and some other missing characters.</td>
+        </tr> 
+        <tr>
+         <td>2022-JP</td>
+         <td>Latin/Japanese 1</td>
+         <td>The Japanese alphabet part 1.</td>
+        </tr> 
+        <tr>
+         <td>2022-JP-2</td>
+         <td>Latin/Japanese 2</td>
+         <td>The Japanese alphabet part 2.</td>
+        </tr> 
+        <tr>
+         <td>2022-KR</td>
+         <td>Latin/Korean 1</td>
+         <td>The Korean alphabet.</td>
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <br> 
+     <br> 
+     <div class="w3-clear nextprev"> 
+      <a class="w3-left w3-btn" href="ref_html_ansi.asp">? Previous</a> 
+      <a class="w3-right w3-btn" href="ref_html_symbols.asp">Next ?</a> 
+     </div> 
+    </div> 
+    <div class="w3-col l2 m12" id="right"> 
+     <div class="sidesection"> 
+      <div id="skyscraper"> 
+       <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>--> 
+       <div id="snhb-wide_skyscraper-0"></div> 
+       <!-- adspace wide--> 
+      </div> 
+     </div> 
+     <div class="sidesection"> 
+      <h4><a href="/colors/colors_picker.asp">COLOR PICKER</a></h4> 
+      <a href="/colors/colors_picker.asp"> <img src="/images/colorpicker.gif" alt="colorpicker"></a> 
+     </div> 
+     <div class="sidesection" id="moreAboutSubject"> 
+     </div> 
+     <!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container w3-text-white">
+    <h4>Exercises</h4>
+  </div>
+  <div>
+    <div class="w3-light-grey">
+      <a target="_blank" href="/html/exercise.asp" style="padding-top:8px">HTML</a>
+      <a target="_blank" href="/css/exercise.asp">CSS</a>
+      <a target="_blank" href="/js/exercise_js.asp">JavaScript</a>
+      <a target="_blank" href="/sql/exercise.asp">SQL</a>
+      <a target="_blank" href="/php/exercise.asp">PHP</a>
+      <a target="_blank" href="/python/exercise.asp">Python</a>
+      <a target="_blank" href="/bootstrap/exercise_bs3.asp">Bootstrap</a>
+      <a target="_blank" href="/jquery/exercise_jq.asp" style="padding-bottom:8px">jQuery</a>
+    </div>
+  </div>
+</div>
+--> 
+     <div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px"> 
+      <div class="w3-container w3-dark-grey"> 
+       <h4><a href="/howto/default.asp" class="w3-hover-text-white">HOW TO</a></h4> 
+      </div> 
+      <div class="w3-container w3-left-align w3-padding-16"> 
+       <a href="/howto/howto_js_tabs.asp">Tabs</a>
+       <br> 
+       <a href="/howto/howto_css_dropdown.asp">Dropdowns</a>
+       <br> 
+       <a href="/howto/howto_js_accordion.asp">Accordions</a>
+       <br> 
+       <a href="/howto/howto_js_sidenav.asp">Side Navigation</a>
+       <br> 
+       <a href="/howto/howto_js_topnav.asp">Top Navigation</a>
+       <br> 
+       <a href="/howto/howto_css_modals.asp">Modal Boxes</a>
+       <br> 
+       <a href="/howto/howto_js_progressbar.asp">Progress Bars</a>
+       <br> 
+       <a href="/howto/howto_css_parallax.asp">Parallax</a>
+       <br> 
+       <a href="/howto/howto_css_login_form.asp">Login Form</a>
+       <br> 
+       <a href="/howto/howto_html_include.asp">HTML Includes</a>
+       <br> 
+       <a href="/howto/howto_google_maps.asp">Google Maps</a>
+       <br> 
+       <a href="/howto/howto_js_rangeslider.asp">Range Sliders</a>
+       <br> 
+       <a href="/howto/howto_css_tooltip.asp">Tooltips</a>
+       <br> 
+       <a href="/howto/howto_js_slideshow.asp">Slideshow</a>
+       <br> 
+       <a href="/howto/howto_js_filter_lists.asp">Filter List</a>
+       <br> 
+       <a href="/howto/howto_js_sort_list.asp">Sort List</a>
+       <br> 
+      </div> 
+     </div> 
+     <div class="sidesection"> 
+      <h4>SHARE</h4> 
+      <div class="w3-text-grey sharethis"> 
+       <script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="https://twitter.com/home?status=Currently reading https://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script> 
+       <br>
+       <br> 
+       <a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook"> <span class="fa fa-thumbs-o-up fa-2x"></span></a> 
+       <div id="fblikeframe" class="w3-modal"> 
+        <div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sidesection"> 
+      <h4><a target="_blank" href="//www.w3schools.com/cert/default.asp">CERTIFICATES</a></h4> 
+      <p> <a href="/cert/cert_html.asp">HTML</a><br> <a href="/cert/cert_css.asp">CSS</a><br> <a href="/cert/cert_javascript.asp">JavaScript</a><br> <a href="/cert/cert_sql.asp">SQL</a><br> <a href="/cert/cert_python.asp">Python</a><br> <a href="/cert/cert_php.asp">PHP</a><br> <a href="/cert/cert_jquery.asp">jQuery</a><br> <a href="/cert/cert_bootstrap.asp">Bootstrap</a><br> <a href="/cert/cert_xml.asp">XML</a></p> 
+      <a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-dark-grey" style="text-decoration:none"> Read More »</a> 
+     </div> 
+     <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;"> 
+      <div id="stickyadcontainer"> 
+       <div style="position:relative;margin:auto;"> 
+        <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>--> 
+        <div id="snhb-sidebar_sticky-0"></div> 
+        <script>
+          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+            // adspace sticky
+            if (document.getElementById("snhb-mid_content-0")) {
+              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
+            }
+            else {
+              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
+            }
+          }
+          else {
+              if (document.getElementById("snhb-mid_content-0")) {
+                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
+              }
+          }
+      </script> 
+       </div> 
+      </div> 
+     </div> 
+     <script>
+  window.addEventListener("scroll", fix_stickyad);
+  window.addEventListener("resize", fix_stickyad);
+</script> 
+    </div> 
+   </div> 
+   <div id="footer" class="footer w3-container w3-white"> 
+    <hr> 
+    <div style="overflow:auto"> 
+     <div class="bottomad"> 
+      <!-- BottomMediumRectangle --> 
+      <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>--> 
+      <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div> 
+      <!-- adspace bmr --> 
+      <!-- RightBottomMediumRectangle --> 
+      <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>--> 
+      <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div> 
+     </div> 
+    </div> 
+    <hr> 
+    <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px"> 
+     <div class="w3-col l3 m3 s12"> 
+      <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">REPORT ERROR</a> 
+     </div> 
+     <div class="w3-col l3 m3 s12"> 
+      <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px">PRINT PAGE</a> 
+     </div> 
+     <div class="w3-col l3 m3 s12"> 
+      <a class="w3-button w3-light-grey w3-block" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">FORUM</a> 
+     </div> 
+     <div class="w3-col l3 m3 s12"> 
+      <a class="w3-button w3-light-grey w3-block" href="/about/default.asp" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ABOUT</a> 
+     </div> 
+    </div> 
+    <hr> 
+    <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative"> 
+     <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">×</span> 
+     <h2>Your Suggestion:</h2> 
+     <form> 
+      <div class="w3-section"> 
+       <label for="err_email">Your E-mail:</label> 
+       <input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email" name="err_email"> 
+      </div> 
+      <div class="w3-section"> 
+       <label for="err_email">Page address:</label> 
+       <input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled> 
+      </div> 
+      <div class="w3-section"> 
+       <label for="err_email">Description:</label> 
+       <textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;margin-top:5px;resize:vertical;"></textarea> 
+      </div> 
+      <div class="form-group"> 
+       <button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button> 
+      </div> 
+      <br> 
+     </form> 
+    </div> 
+    <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative"> 
+     <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">×</span> 
+     <h2>Thank You For Helping Us!</h2> 
+     <p>Your message has been sent to W3Schools.</p> 
+    </div> 
+    <div class="w3-row w3-center w3-small"> 
+     <div class="w3-col l3 m6 s12"> 
+      <div class="top10"> 
+       <h4>Top Tutorials</h4> 
+       <a href="/html/default.asp">HTML Tutorial</a>
+       <br> 
+       <a href="/css/default.asp">CSS Tutorial</a>
+       <br> 
+       <a href="/js/default.asp">JavaScript Tutorial</a>
+       <br> 
+       <a href="/howto/default.asp">How To Tutorial</a>
+       <br> 
+       <a href="/sql/default.asp">SQL Tutorial</a>
+       <br> 
+       <a href="/python/default.asp">Python Tutorial</a>
+       <br> 
+       <a href="/w3css/default.asp">W3.CSS Tutorial</a>
+       <br> 
+       <a href="/bootstrap/bootstrap_ver.asp">Bootstrap Tutorial</a>
+       <br> 
+       <a href="/php/default.asp">PHP Tutorial</a>
+       <br> 
+       <a href="/jquery/default.asp">jQuery Tutorial</a>
+       <br> 
+       <a href="/java/default.asp">Java Tutorial</a>
+       <br> 
+       <a href="/cpp/default.asp">C++ Tutorial</a>
+       <br> 
+      </div> 
+     </div> 
+     <div class="w3-col l3 m6 s12"> 
+      <div class="top10"> 
+       <h4>Top References</h4> 
+       <a href="/tags/default.asp">HTML Reference</a>
+       <br> 
+       <a href="/cssref/default.asp">CSS Reference</a>
+       <br> 
+       <a href="/jsref/default.asp">JavaScript Reference</a>
+       <br> 
+       <a href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+       <br> 
+       <a href="/python/python_reference.asp">Python Reference</a>
+       <br> 
+       <a href="/w3css/w3css_references.asp">W3.CSS Reference</a>
+       <br> 
+       <a href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a>
+       <br> 
+       <a href="/php/php_ref_overview.asp">PHP Reference</a>
+       <br> 
+       <a href="/colors/colors_names.asp">HTML Colors</a>
+       <br> 
+       <a href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
+       <br> 
+       <a href="/java/java_ref_keywords.asp">Java Reference</a>
+       <br> 
+       <a href="/angular/angular_ref_directives.asp">Angular Reference</a>
+       <br> 
+      </div> 
+     </div> 
+     <div class="w3-col l3 m6 s12"> 
+      <div class="top10"> 
+       <h4>Top Examples</h4> 
+       <a href="/html/html_examples.asp">HTML Examples</a>
+       <br> 
+       <a href="/css/css_examples.asp">CSS Examples</a>
+       <br> 
+       <a href="/js/js_examples.asp">JavaScript Examples</a>
+       <br> 
+       <a href="/howto/default.asp">How To Examples</a>
+       <br> 
+       <a href="/sql/sql_examples.asp">SQL Examples</a>
+       <br> 
+       <a href="/python/python_examples.asp">Python Examples</a>
+       <br> 
+       <a href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
+       <br> 
+       <a href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
+       <br> 
+       <a href="/php/php_examples.asp">PHP Examples</a>
+       <br> 
+       <a href="/jquery/jquery_examples.asp">jQuery Examples</a>
+       <br> 
+       <a href="/java/java_examples.asp">Java Examples</a>
+       <br> 
+       <a href="/xml/xml_examples.asp">XML Examples</a>
+       <br> 
+      </div> 
+     </div> 
+     <div class="w3-col l3 m6 s12"> 
+      <div class="top10"> 
+       <h4>Web Certificates</h4> 
+       <a href="/cert/default.asp">HTML Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">CSS Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">JavaScript Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">SQL Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">Python Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">jQuery Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">PHP Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">Bootstrap Certificate</a>
+       <br> 
+       <a href="/cert/default.asp">XML Certificate</a>
+       <br> 
+       <a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none"> Get Certified »</a> 
+      </div> 
+     </div> 
+    </div> 
+    <hr> 
+    <div class="w3-center w3-small w3-opacity">
+      W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our 
+     <a href="/about/about_copyright.asp">terms of use</a>, 
+     <a href="/about/about_privacy.asp">cookie and privacy policy</a>. 
+     <a href="/about/about_copyright.asp">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.
+     <br> 
+     <a href="//www.w3schools.com/w3css/">Powered by W3.CSS</a>.
+     <br>
+     <br> 
+     <a href="//www.w3schools.com"> <img style="width:150px;height:28px;border:0" src="/images/w3schoolscom_gray.gif" alt="W3Schools.com"></a> 
+    </div> 
+    <br>
+    <br> 
+   </div> 
+  </div> 
+  <script src="/lib/w3schools_footer.js"></script> 
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]--> 
+  <script src="tryit_script.js"></script> 
+  <script>
+charsetTryit(3, 1, 2, -1);
+</script>  
+ </body>
+</html>
